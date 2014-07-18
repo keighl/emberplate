@@ -1,0 +1,45 @@
+!!! 5
+
+
+%head
+  %meta{ charset: 'utf-8' }
+  %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+  %link{ rel: "stylesheet", href: "/assets/css/screen.css?#{Time.now.to_i}" }
+
+  %script{ type: "text/javascript", src: "//use.typekit.net/krl7hlf.js" }
+  :javascript
+    try{Typekit.load();}catch(e){}
+
+
+  %script{ src: "/assets/js/modernizr.js?#{Time.now.to_i}" }
+
+  :javascript
+    var hash, href, pathname;
+
+    if (Modernizr.history) {
+      hash = window.location.hash;
+      if (hash.length) {
+        href = hash.replace('#', '');
+        window.location.href = href;
+      }
+    } else {
+      pathname = window.location.pathname;
+      if (pathname.length > 1) {
+        window.location.href = '/#' + pathname;
+      }
+    }
+
+%body
+
+  :javascript
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '', '');
+    ga('send', 'pageview');
+
+  %script{ src: "/assets/js/vendor.js?#{Time.now.to_i}" }
+  %script{ src: "/assets/js/templates.js?#{Time.now.to_i}" }
+  %script{ src: "/assets/js/app.js?#{Time.now.to_i}" }

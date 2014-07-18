@@ -1,0 +1,33 @@
+# --------------------------------------------------------------------------- #
+# Project Info
+#   Defaults shown. Learn more about these options by running
+#   `fontcustom help` or visiting <http://fontcustom.com>.
+# --------------------------------------------------------------------------- #
+
+font_name: fontcustom
+css_selector: .icon-{{glyph}}
+preprocessor_path: /assets/fonts
+autowidth: true
+no_hash: false
+force: false
+debug: false
+quiet: false
+
+# --------------------------------------------------------------------------- #
+# Input Paths
+# --------------------------------------------------------------------------- #
+
+input:
+  vectors: app/fontcustom
+
+
+# --------------------------------------------------------------------------- #
+# Output Paths
+# --------------------------------------------------------------------------- #
+
+output:
+  fonts: public/assets/fonts
+  css: app/css
+
+templates:
+ - scss

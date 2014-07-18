@@ -1,0 +1,59 @@
+body
+  position: relative
+
+////////////////////// TYPE
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li
+  margin-top: 0px // override normalize
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: normal
+
+p
+  line-height: 1.5em
+
+a,
+a:link,
+a:visited
+  +single-transition(color, 0.05s, ease-in-out)
+  text-decoration: none
+  outline: none
+
+a:hover, a:focus
+  color: #45aca8
+
+strong
+  font-weight: normal
+
+em
+  font-weight: normal
+
+em strong,
+strong em
+  font-weight: normal
+
+
+iframe
+  border: none
+  display: block
+
+
+.clear
+  clear: both
+
+.container
+  +container
+  position: relative

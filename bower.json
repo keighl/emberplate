@@ -1,0 +1,17 @@
+{
+  "name": "flatski",
+  "version": "0.0.1",
+  "authors": [
+    "Kyle Truscott <kyle@freeassociation.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ember": "1.5.1"
+  }
+}

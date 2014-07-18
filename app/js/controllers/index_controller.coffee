@@ -1,0 +1,1 @@
+FA.IndexController = Ember.ObjectController.extend()
