@@ -1,8 +1,8 @@
 {
-  "name": "flatski",
+  "name": "emberplate",
   "version": "0.0.1",
   "authors": [
-    "Kyle Truscott <kyle@freeassociation.com>"
+    "Kyle Truscott <keighl@keighl.com>"
   ],
   "private": true,
   "ignore": [
