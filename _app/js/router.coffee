@@ -22,9 +22,6 @@ FA.Route = Ember.Route.extend
 
   actions:
 
-    setPageTitle: (title) ->
-      $('title').html title
-
     error: (reason, transition) ->
       if reason.status == 404
         @transitionTo 'not_found'

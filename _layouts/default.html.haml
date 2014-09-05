@@ -1,15 +1,12 @@
 !!! 5
-
-
 %head
   %meta{ charset: 'utf-8' }
   %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
   %link{ rel: "stylesheet", href: "/assets/css/screen.css?#{Time.now.to_i}" }
 
-  %script{ type: "text/javascript", src: "//use.typekit.net/krl7hlf.js" }
+  %script{ type: "text/javascript", src: "//use.typekit.net/XXXXX.js" }
   :javascript
     try{Typekit.load();}catch(e){}
-
 
   %script{ src: "/assets/js/modernizr.js?#{Time.now.to_i}" }
 
@@ -31,6 +28,8 @@
 
 %body
 
+  {{content}}
+
   :javascript
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -43,3 +42,4 @@
   %script{ src: "/assets/js/vendor.js?#{Time.now.to_i}" }
   %script{ src: "/assets/js/templates.js?#{Time.now.to_i}" }
   %script{ src: "/assets/js/app.js?#{Time.now.to_i}" }
+

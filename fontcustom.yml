@@ -18,7 +18,7 @@ quiet: false
 # --------------------------------------------------------------------------- #
 
 input:
-  vectors: app/fontcustom
+  vectors: _app/fontcustom
 
 
 # --------------------------------------------------------------------------- #
@@ -26,8 +26,8 @@ input:
 # --------------------------------------------------------------------------- #
 
 output:
-  fonts: public/assets/fonts
-  css: app/css
+  fonts: assets/fonts
+  css: _app/css
 
 templates:
  - scss

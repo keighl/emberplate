@@ -10,22 +10,22 @@ module.exports = (grunt) ->
           name = name.replace 'tmp/templates/', ''
       compile:
         files:
-          "public/assets/js/templates.js": "tmp/templates/**/*.hbs"
+          "assets/js/templates.js": "tmp/templates/**/*.hbs"
 
     bower_concat:
       all:
-        dest: 'public/assets/js/vendor.js',
+        dest: 'assets/js/vendor.js',
 
     coffee:
       compile:
         files:
-          "public/assets/js/app.js" : ['app/js/**/*.coffee']
+          "assets/js/app.js" : ['_app/js/**/*.coffee']
 
     watch:
       app:
         files: [
           'tmp/templates/**/*.hbs'
-          'app/js/**/*.coffee'
+          '_app/js/**/*.coffee'
         ]
         tasks: [
           'emberTemplates'
@@ -50,6 +50,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-bower-concat'
   grunt.loadNpmTasks 'grunt-contrib-connect'
 
-  grunt.registerTask 'default', ['bower_concat', 'emberTemplates', 'coffee', 'connect', 'watch']
+  grunt.registerTask 'default', ['bower_concat', 'emberTemplates', 'coffee', 'watch']
 
   return
